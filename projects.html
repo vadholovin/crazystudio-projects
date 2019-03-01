@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>
+    <!-- <?php the_title(); ?> -->
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.1.css">
+</head>
+
+<body>
+
+  <main class="page">
+    <div class="container">
+  
+      <h1 class="page-title projects-title">Портфолио</h1>
+  
+      <div class="page-content projects-content">
+        <div class="flex-row">
+          <aside class="projects-sidebar">
+            <div class="projects-sidebar-holder">
+              <form action="" class="filters">
+                <div class="filter">
+                  <div class="filter-header js-filter-header">
+                    <h2 class="filter-title filter-title--first is-active">Тип работы</h2>
+                  </div>
+                  <div class="filters-params is-active">
+                    <ul class="filter-list">
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="radio" name="works" class="filter-control" value="all" checked>
+                          <div class="filter-radio"></div>
+                          <span class="filter-list__item-text">Все</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="radio" name="works" class="filter-control" value="dev">
+                          <div class="filter-radio"></div>
+                          <span class="filter-list__item-text">Разработка</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="radio" name="works" class="filter-control" value="design">
+                          <div class="filter-radio"></div>
+                          <span class="filter-list__item-text">Дизайн</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="filter">
+                  <div class="filter-header js-filter-header">
+                    <h2 class="filter-title is-active">CMS</h2>
+                  </div>
+                  <div class="filters-params is-active">
+                    <ul class="filter-list">
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="cms" class="filter-control" value="wp">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Wordpress</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="cms" class="filter-control" value="bitrix">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Bitrix</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="cms" class="filter-control" value="joomla">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Joomla</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="cms" class="filter-control" value="opencart">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Open Cart</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="cms" class="filter-control" value="modx">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Modx</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="filter">
+                  <div class="filter-header js-filter-header">
+                    <h2 class="filter-title is-active">Категория</h2>
+                  </div>
+                  <div class="filters-params is-active">
+                    <ul class="filter-list">
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="category" class="filter-control" value="delivery">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Грузоперевозки</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="category" class="filter-control" value="pets">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Животные</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="category" class="filter-control" value="business">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Бизнес</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="category" class="filter-control" value="restaurant">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Рестораны</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="filter">
+                  <div class="filter-header js-filter-header">
+                    <h2 class="filter-title is-active">Бюджет</h2>
+                  </div>
+                  <div class="filters-params is-active">
+                    <div class="budget-slider">
+                      <div class="budget-slider__bar" id="budgetSlider"></div>
+                      <div class="budget-slider__units">
+                        <span class="budget-slider__u budget-slider__u--min">Низкий</span>
+                        <span class="budget-slider__u budget-slider__u--middle">Средний</span>
+                        <span class="budget-slider__u budget-slider__u--max">Высокий</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="filter">
+                  <div class="filter-header js-filter-header">
+                    <h2 class="filter-title is-active">Тип сайта</h2>
+                  </div>
+                  <div class="filters-params is-active">
+                    <ul class="filter-list">
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="kind" class="filter-control" value="lp">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Landing Page</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="kind" class="filter-control" value="infosite">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Информационный сайт</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="kind" class="filter-control" value="shop">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Интернет-магазин</span>
+                        </label>
+                      </li>
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="kind" class="filter-control" value="hard">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Сложная разработка</span>
+                        </label>
+                      </li>
+                    </ul>
+
+                    <ul class="filter-list filter-list--border">
+                      <li class="filter-list__item">
+                        <label class="filter-list__item-label" tabindex="0">
+                          <input type="checkbox" name="kind" class="filter-control" value="fantastic">
+                          <div class="filter-checkbox"></div>
+                          <span class="filter-list__item-text">Crazy</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <button class="button button-primary button--filters">Применить</button>
+              </form>
+            </div>
+          </aside>
+  
+          <div class="projects-works">
+            <div class="projects-sort">
+              <span class="projects-sort__heading">Выводить:</span>
+              <ul class="projects-sort__list">
+                <li class="projects-sort__item">
+                  <a href="#" class="button button-outline button-outline--sort is-active">по популярности</a>
+                </li>
+                <li class="projects-sort__item">
+                  <a href="#" class="button button-outline button-outline--sort">от новых к старым</a>
+                </li>
+                <li class="projects-sort__item">
+                  <a href="#" class="button button-outline button-outline--sort">от старых к новым</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="projects-cases pure-g">
+              <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 case-holder">
+                <div class="case" tabindex="0">
+                  <div class="case-thumb">
+                    <img src="img/case.png" alt="">
+                  </div>
+                  <b class="case-name">Name of Company Name of Company</b>
+
+                  <div class="case-extra">
+                    <p class="case-desc">Краткое описание компании и сферы ее деятельности</p>
+                    <a href="#" class="button button-outline button-outline--case">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 case-holder">
+                <div class="case" tabindex="0">
+                  <div class="case-thumb">
+                    <img src="img/case.png" alt="">
+                  </div>
+                  <b class="case-name">Name of Company</b>
+
+                  <div class="case-extra">
+                    <p class="case-desc">Краткое описание компании и сферы ее деятельности</p>
+                    <a href="#" class="button button-outline button-outline--case">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 case-holder">
+                <div class="case" tabindex="0">
+                  <div class="case-thumb">
+                    <img src="img/case.png" alt="">
+                  </div>
+                  <b class="case-name">Name of Company</b>
+
+                  <div class="case-extra">
+                    <p class="case-desc">Краткое описание компании и сферы ее деятельности</p>
+                    <a href="#" class="button button-outline button-outline--case">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 case-holder">
+                <div class="case" tabindex="0">
+                  <div class="case-thumb">
+                    <img src="img/case.png" alt="">
+                  </div>
+                  <b class="case-name">Name of Company</b>
+
+                  <div class="case-extra">
+                    <p class="case-desc">Краткое описание компании и сферы ее деятельности</p>
+                    <a href="#" class="button button-outline button-outline--case">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 case-holder">
+                <div class="case" tabindex="0">
+                  <div class="case-thumb">
+                    <img src="img/case.png" alt="">
+                  </div>
+                  <b class="case-name">Name of Company</b>
+
+                  <div class="case-extra">
+                    <p class="case-desc">Краткое описание компании и сферы ее деятельности</p>
+                    <a href="#" class="button button-outline button-outline--case">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <ul class="footer-social">
+        <li class="footer-social__item footer-social__item--phone">
+          <a href="tel:+79651500303">
+            +7&nbsp;(965)&nbsp;150-03-03
+          </a>
+        </li>
+
+        <li class="footer-social__item footer-social__item--email">
+          <a href="mailto:office@crazy.studio">
+            office@crazy.studio
+          </a>
+        </li>
+
+        <li class="footer-social__item footer-social__item--whatsapp">
+          <a title="WhatsApp" href="whatsapp://send?phone=+79651500303">
+            +79651500303
+          </a>
+        </li>
+
+        <li class="footer-social__item footer-social__item--vk">
+          <a title="Vkontakte" href="https://vk.com/artemcrazystudio" target="_blank">
+            https://vk.com/artemcrazystudio
+          </a>
+        </li>
+
+        <li class="footer-social__item footer-social__item--telegram">
+          <a title="Telegram" href="https://t.me/artemcrazy">
+            @artemcrazy
+          </a>
+        </li>
+
+        <li class="footer-social__item footer-social__item--skype">
+          <a title="Skype" href="skype:artem@crazy.studio?chat">
+            artem@crazy.studio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <script defer src="libs/jquery-ui/jquery-ui.min.js"></script>
+  <script defer src="libs/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

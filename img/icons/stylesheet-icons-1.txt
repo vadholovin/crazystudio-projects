@@ -1,0 +1,113 @@
+.i {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.i-ae {
+    width: 38px;
+    height: 39px;
+    background-position: -4px -4px;
+}
+
+.i-ai {
+    width: 38px;
+    height: 39px;
+    background-position: -50px -4px;
+}
+
+.i-bitrix {
+    width: 38px;
+    height: 39px;
+    background-position: -96px -4px;
+}
+
+.i-corel {
+    width: 32px;
+    height: 39px;
+    background-position: -142px -4px;
+}
+
+.i-earth-shade {
+    width: 28px;
+    height: 29px;
+    background-position: -4px -51px;
+}
+
+.i-fb {
+    width: 38px;
+    height: 39px;
+    background-position: -40px -51px;
+}
+
+.i-figma {
+    width: 28px;
+    height: 39px;
+    background-position: -86px -51px;
+}
+
+.i-insta {
+    width: 38px;
+    height: 39px;
+    background-position: -122px -51px;
+}
+
+.i-joomla {
+    width: 38px;
+    height: 39px;
+    background-position: -4px -98px;
+}
+
+.i-laravel {
+    width: 38px;
+    height: 39px;
+    background-position: -50px -98px;
+}
+
+.i-modx {
+    width: 37px;
+    height: 39px;
+    background-position: -96px -98px;
+}
+
+.i-node {
+    width: 42px;
+    height: 39px;
+    background-position: -141px -98px;
+}
+
+.i-opencart {
+    width: 38px;
+    height: 39px;
+    background-position: -4px -145px;
+}
+
+.i-php {
+    width: 62px;
+    height: 37px;
+    background-position: -50px -145px;
+}
+
+.i-ps {
+    width: 38px;
+    height: 39px;
+    background-position: -120px -145px;
+}
+
+.i-rp {
+    width: 38px;
+    height: 39px;
+    background-position: -182px -4px;
+}
+
+.i-vk {
+    width: 38px;
+    height: 39px;
+    background-position: -168px -51px;
+}
+
+.i-wp {
+    width: 38px;
+    height: 39px;
+    background-position: -191px -98px;
+}

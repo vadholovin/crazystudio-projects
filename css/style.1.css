@@ -1253,8 +1253,20 @@ img {
   margin-bottom: 2.5rem;
 }
 
-.project-info {
-  padding-left: 65px;
+.project-tab__content {
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 992px) {
+  .project-tab__content {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project-info {
+    padding-left: 65px;
+  }
 }
 
 .project-info__element {
@@ -1293,11 +1305,17 @@ img {
   font-size: 1.25rem;
   line-height: 1;
   color: #7b133c;
+  transition: color 0.15s ease-in-out;
+}
+
+.project-info__address:hover,
+.project-info__address:focus {
+  color: #fff;
 }
 
 .project-info__address .icon {
   position: relative;
-  top: 5px;
+  top: 4px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
